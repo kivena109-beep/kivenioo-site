@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kivenioo - Official</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #fff; }
+  to { text-shadow: 0 0 25px #00eaff; }
+}
+
+.nav-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+  animation: fade 2s ease;
+}
+
+@keyframes fade {
+  from {opacity:0; transform: translateY(30px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: #ff4757;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #ff6b81;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 260px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Kivenioo</div>
+  <div class="nav-links">
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Welcome to Kivenioo</h1>
+  <p>Follow me on social media</p>
+
+  <a class="btn" href="https://www.youtube.com/channel/UCilkfxXv453wSlz0E-vSpPQ" target="_blank">
+    Follow YouTube
+  </a>
+
+  <a class="btn" href="https://www.instagram.com/kovonashraf/" target="_blank">
+    Follow Instagram
+  </a>
+</div>
+
+<div class="cards">
+
+  <div class="card">
+    <h3>Contact</h3>
+    <p>📧 kivena109@gmail.com</p>
+    <p>📱 01270318491</p>
+  </div>
+
+  <div class="card">
+    <h3>About Me</h3>
+    <p>Click to know more about me 👇</p>
+    <a class="btn" href="about.html">Go</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Kivenioo
+</footer>
+
+</body>
+</html>
